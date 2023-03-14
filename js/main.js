@@ -1,6 +1,6 @@
-const row=document.querySelector('.row')
-const srcbtn=document.querySelector('.srcbtn')
-let. input=document.querySelector('.input')
+let row=document.querySelector('.row')
+let srcbtn=document.querySelector('.srcbtn')
+let input=document.querySelector('.cus-input')
 for(let i=1; i<150; i++){
     fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
     .then(res=>res.json())
@@ -14,10 +14,10 @@ for(let i=1; i<150; i++){
 `
 })
 }     
-      let id=input.value
+   
          srcbtn.addEventListener('click',()=>{
-          
-    fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
+          console.log("hello");
+    fetch(`https://pokeapi.co/api/v2/pokemon/`+ input.value)
     .then(res=>res.json())
     .then(data=>{console.log(data)
         row.innerHTML=`
@@ -29,6 +29,5 @@ for(let i=1; i<150; i++){
 `
 })
 })
-
 
 
