@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: red;
+}
+.new2{
+    text-align: center;
+    color: white;
+}
+.col-4{
+    padding: 60px;
+    left: 40px;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+.new3{
+    margin-left: 50px;
+}
+.new4{
+    text-align: center;
+    margin-top: 40px;
+
+}
+.new5{
+    text-align: center;
+}
